@@ -6,12 +6,16 @@ const getUrl = userId => {
 }
 
 function App() {
+    /**
+     * If you'd like to test how this works for yourself, make sure you enable throttling
+     * within the browser's developer tools
+     */
+
     const [userId, setUserId] = useState('');
     const [posts, setPosts] = useState([]);
 
     useEffect(() => {
         let isCanceled = false;
-        // TODO: Find and add public URL for the example
         fetch(getUrl(userId))
         .then(response => response.json())
         .then(data => {
