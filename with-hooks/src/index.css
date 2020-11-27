@@ -7,6 +7,36 @@ body {
   -moz-osx-font-smoothing: grayscale;
 }
 
+.results {
+    display: grid;
+    grid-template-columns: repeat(4, 1fr);
+    padding-left: 100px;
+}
+
+.post > * {
+    width: 100%;
+    padding: 10px;
+}
+
+.post {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+    margin: 25px 0;
+    width: 350px;
+    color: #EEE;
+}
+
+.post .title {
+    background: rgba(0, 0, 0, .8);
+    text-align: center;
+}
+
+.post .body {
+    background: rgba(0, 0, 0, .6);
+}
+
 code {
   font-family: source-code-pro, Menlo, Monaco, Consolas, 'Courier New',
     monospace;
